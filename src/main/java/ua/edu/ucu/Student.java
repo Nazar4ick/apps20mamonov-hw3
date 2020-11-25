@@ -47,8 +47,8 @@ class Student {
         }
 
         Student s = (Student) o;
-        return this.GPA == s.GPA && this.year == s.year &&
-                this.name.equals(s.name) && this.surname.equals(s.surname);
+        return this.GPA == s.GPA && this.year == s.year
+                && this.name.equals(s.name) && this.surname.equals(s.surname);
     }
 
 }

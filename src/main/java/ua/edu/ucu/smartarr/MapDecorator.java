@@ -18,12 +18,12 @@ public class MapDecorator extends SmartArrayDecorator {
 
     @Override
     public String operationDescription() {
-        if (smartArray.operationDescription().equals("No " +
-                "decorators are currently applied")) {
+        if (smartArray.operationDescription().equals("No "
+                + "decorators are currently applied")) {
             return "Map decorator: applies a function to all elements";
         }
-        return smartArray.operationDescription() + ", " +
-                "Map decorator: applies a function to all elements";
+        return smartArray.operationDescription() + ", "
+                + "Map decorator: applies a function to all elements";
     }
 
     @Override
