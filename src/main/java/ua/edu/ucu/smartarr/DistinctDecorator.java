@@ -16,10 +16,12 @@ public class DistinctDecorator extends SmartArrayDecorator {
 
     @Override
     public String operationDescription() {
-        if (smartArray.operationDescription().equals("No decorators are currently applied")) {
+        if (smartArray.operationDescription().equals("No" +
+                " decorators are currently applied")) {
             return "Distinct decorator: removes all duplicates in this array";
         }
-        return smartArray.operationDescription() + ", Distinct decorator: removes all duplicates in this array";
+        return smartArray.operationDescription() +
+                ", Distinct decorator: removes all duplicates in this array";
     }
 
     @Override

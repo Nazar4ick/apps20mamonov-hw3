@@ -20,10 +20,14 @@ public class FilterDecorator extends SmartArrayDecorator {
 
     @Override
     public String operationDescription() {
-        if (smartArray.operationDescription().equals("No decorators are currently applied")) {
-            return "Filter decorator: removes elements which don't satisfy the predicate";
+        if (smartArray.operationDescription().equals("No " +
+                "decorators are currently applied")) {
+            return "Filter decorator: removes elements " +
+                    "which don't satisfy the predicate";
         }
-        return smartArray.operationDescription() + ", Filter decorator: removes elements which don't satisfy the predicate";
+        return smartArray.operationDescription() + ", Filter " +
+                "decorator: removes elements which don't " +
+                "satisfy the predicate";
     }
 
     @Override

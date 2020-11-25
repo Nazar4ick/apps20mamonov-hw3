@@ -16,10 +16,12 @@ public class SortDecorator extends SmartArrayDecorator {
 
     @Override
     public String operationDescription() {
-        if (smartArray.operationDescription().equals("No decorators are currently applied")) {
+        if (smartArray.operationDescription().equals("No " +
+                "decorators are currently applied")) {
             return "Sort decorator: sorts elements according to the comparator";
         }
-        return smartArray.operationDescription() + ", Sort decorator: sorts elements according to the comparator";
+        return smartArray.operationDescription() + ", Sort " +
+                "decorator: sorts elements according to the comparator";
     }
 
     @Override
@@ -33,7 +35,8 @@ public class SortDecorator extends SmartArrayDecorator {
     }
 
     private Object[] sortSmartArray() {
-        ArrayList<Object> newList = new ArrayList<>(Arrays.asList(this.smartArray.toArray()));
+        ArrayList<Object> newList = new ArrayList<>
+                (Arrays.asList(this.smartArray.toArray()));
         newList.sort(this.com);
         return newList.toArray();
     }
